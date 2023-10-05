@@ -1,0 +1,203 @@
+article{
+    width: 70%;
+    margin-top:30px;
+}
+main article .most-popular{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 180px;
+    margin: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    font-weight: bold;  
+    transition: 0.9s;
+    overflow: hidden;
+    z-index: 4;
+}
+.most-popular img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    object-position: top;
+}
+.most-popular a{
+    color: #d0eef6;
+}
+
+.trip-title{
+    font-size: 25px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index: 10;
+    position:absolute;
+}
+article .most-popular:hover{
+    
+    display: flex;
+    height: 250px;
+    margin:25px;
+    justify-content: center;
+    min-height: fit-content;
+    min-width: fit-content;
+    
+}
+.most-popular:hover img{
+    filter: brightness(55%) blur(1px);
+   
+}
+article>.most-popular:hover span{
+    display:none;
+}
+
+div>.description{
+    display: none;
+    position:absolute;
+    color:white;
+    animation:none;
+    filter: brightness(100%);
+    margin:10px;
+    text-shadow: 0px 2px .0000005c;
+    text-align: center;
+}
+article>.most-popular:hover .description{
+    display:block;
+    position:absolute;
+    color:white;
+    margin:10px;
+}
+aside{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 25px;
+    margin: 10px;
+    text-align: center; 
+}
+aside .weather{
+    width:67%;
+    height: 22rem;
+    margin:44px 25px 25px 25px;
+    background: linear-gradient(319deg, #1eabceb8, #978ed292);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding:20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.weather .weather-icon{
+    width: 25%;
+    align-self: center;
+    margin: 17px 0;
+}
+.weather .humidity-wind{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 40px;
+    gap:8px;
+}
+.weather .humidity-wind img{
+    width: 45%;
+    margin: 10px 0 15px 0;
+}
+.temp{
+    font-size: 42px;
+}
+.humidity, .wind{
+    font-size: 22px;
+}
+.fun-facts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fun-facts{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.fun-facts1{
+    border: 1px solid black;
+    display: flex;
+    width: 40%;
+    height: 470px;
+    transition: 0.9s;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin:20px;
+    padding:20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+h3{
+    font-weight: 500;
+}
+.fun-facts1 h3{
+    margin:10px;
+    text-align: center;
+}
+.fun-facts1:hover h3{
+    display:block;
+}
+@media (max-width: 1024px){
+   article{
+    width: 100%;
+   }
+   aside{
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    
+   }
+   article .fun-facts1:hover{
+    width: 100%;
+   }
+   .fun-facts1{
+    width: 100%;
+    height: fit-content;
+   }
+   aside .weather{
+    width:283px;
+    flex-wrap: wrap;
+    }
+}
+@media (max-width:828px){
+    aside{
+        flex-wrap: wrap;
+    }
+    aside .weather{
+       width:283px;
+    }
+}
+@media (max-width:1557px){
+    .fun-facts1{
+        height: 590px;
+    }
+}
+@media (max-width:1400px){
+    .fun-facts1{
+        width: 100%;
+        height: fit-content;
+    }
+}

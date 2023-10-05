@@ -1,0 +1,76 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 43px 30px 30px 30px;
+}
+h1{
+    font-size: 35px;
+    margin: 10px; 
+    font-weight: 700;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 40px;
+    padding: 40px 40px 14px 40px;
+    
+}
+h2{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    text-align: left;
+    padding: 10px 40px 20px 40px;
+    line-height: 1.6;
+}
+article{
+    display: flex;
+}
+.everest-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.everest img{
+    display: flex;
+    width: 45%;
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.details h1{
+    padding: 10px;
+    margin: 0 36px 28px 31px;
+}
+.everest a{
+    color: black;
+}
+@media (max-width: 1124px){
+    #kontener img{
+        display: none;
+    }
+}
+@media (max-width: 1024px){
+   article{
+    width: 100%;
+   }
+   aside{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .everest-img{
+    flex-direction: column;
+    align-items: center;
+   }
+   .everest img{
+    width: 100%;
+    padding: 0 38px;
+   }
+   .details{
+    flex-direction: column;
+    align-items: center;
+   }
+}

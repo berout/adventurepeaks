@@ -1,0 +1,43 @@
+
+h1{
+    font-size: 35px;
+    margin: 10px;
+    text-align: center; 
+    font-weight: 700;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 40px;
+    padding: 40px 40px 14px 40px;
+}
+h2{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    text-align: left;
+    padding: 10px 40px 40px 40px;
+    line-height: 1.6;
+}
+article{
+    display: flex;
+}
+.team1{
+    display: none;
+}
+.team{
+    float: right;
+    width: 40%;
+    margin: 0 41px 20px 40px;
+}
+@media (max-width: 1024px){
+
+   .team1{
+    display: block;
+    width: 100%;
+    padding:0 40px 10px 40px;
+    margin: 0;
+   }
+   .team{
+    display: none;
+   }
+}
+

@@ -1,0 +1,150 @@
+h1{
+    font-size: 35px;
+    margin: 10px; 
+    font-weight: 700;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 40px;
+    padding: 40px 40px 14px 40px;
+}
+h2{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    text-align: left;
+    padding: 10px 40px 40px 40px;
+    line-height: 1.6;
+}
+h3{
+    font-size: 27px;
+}
+.contact-info{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    padding-bottom: 32px;
+    color: #3a7295;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 514px;
+    height: 400px;
+    overflow: hidden;
+    margin: 10px 0 45px 0;
+}
+.contact-form .form{
+    display: flex;
+    background: rgb(246, 246, 246);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    padding: 15px 21px 15px 21px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.form form{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    margin:2px;
+}
+.form .form1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 43px;    
+}
+.form .form2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+}
+.form2 textarea {
+    resize: none;
+    width: 100%;
+    background: transparent;
+    border: 1.2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    transition: 0.35s;
+  }
+.form1 label{
+    position: absolute;
+    top:16%;
+    left:11px;
+    font-size: 19px;
+    pointer-events: none;
+    color:rgb(0, 0, 0);
+    transition: 0.35s;
+}
+.form input{
+    background: transparent;
+    border: 1.2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 100%;
+    gap:5px;
+    padding: 0 10px;
+    outline: none;
+}
+.form2 label{
+    position: absolute;
+    top:8%;
+    left:11px;
+    font-size: 19px;
+    pointer-events: none;
+    color:rgb(0, 0, 0);
+    transition: 0.35s;
+}
+
+.form1 input:focus~label, .form1 input:valid~label{
+    top:-8px;
+    font-size:16px;
+    background: rgb(246, 246, 246);
+}
+textarea:focus~label, textarea:valid~label{
+    top:-2px;
+    font-size:16px;
+    background: rgb(246, 246, 246);
+}
+.form2 button{
+    background-color: #73abce;
+    width: 80px;
+    height: 34px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    font-style: bold;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 1024px){
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form{
+        width: 90%;
+    }
+}

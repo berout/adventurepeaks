@@ -1,0 +1,138 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    margin: 43px 30px 30px 30px;
+}
+h1{
+    font-size: 35px;
+    margin: 10px;
+    text-align: center; 
+    font-weight: 700;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 40px 40px 14px 40px;
+}
+h2{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    text-align: left;
+    padding: 20px 20px 0 20px;
+}
+h3{
+    font-weight: 500;
+    padding: 20px;
+    line-height: 1.4;
+}
+.contact-info{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.courses{
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 10px 70px 40px 40px;
+}
+.trips{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.trip{
+    color: black;
+    text-decoration: none;
+    width: 48%;
+    transition: 0.5s;
+    will-change: contents;
+}
+.trip-card{
+    background-color: rgba(243, 243, 240, 0.59);
+    display: flex;
+    transition: 0.5s;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    margin:40px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    height:85%;
+    color: black;
+    text-decoration: none;
+}
+.trip:hover{
+    transform: scale(105%);    
+}
+.more-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.more-info h2, .more-info h1{
+    padding: 0 10px 25px 25px;
+}
+.trip-img img{
+    width: 100%;
+    object-fit: cover;
+}
+main .trips .trip .trip-img{
+    height: 125px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    padding: 0;
+    object-fit: cover;
+}
+.job-offers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.offer{
+    background-color: rgba(99, 117, 125, 0.078);
+    display: flex;
+    transition: 0.5s;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    margin:40px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    will-change: contents;
+}
+@media (max-width: 1124px){
+    .human{
+        width: 35%;
+    }
+}
+@media (max-width: 1024px){
+   article{
+    width: 100%;
+   }
+   aside{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .trip{
+    width: 100%;
+   }
+}
+@media (max-width: 735px){
+    .more-info{
+        flex-direction: column;
+    }
+    .more-info h2{
+        font-size: 22px;
+    }    
+}
+@media (min-width: 1024px) and (max-width: 1374px){
+    .more-info{
+        flex-direction: column;
+    }
+    .more-info h2{
+        font-size: 22px;
+    }
+}
