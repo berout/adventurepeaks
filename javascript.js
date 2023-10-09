@@ -72,7 +72,7 @@ async function checkWeather (id, city){
         last = "heavy-rain.png";
     }
     else if (data.weather[0].main == "Snow"){
-        last = "snow.png";
+        last = "snowy.png";
     }
     else if (data.weather[0].main == "Drizzle"){
         last = "drizzle.png";
